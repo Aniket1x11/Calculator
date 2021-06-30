@@ -8,6 +8,7 @@ public class Calculator
         Calculator calculator = new Calculator();
         
         System.out.println(calculator.add(5,6));
+        System.out.println(calculator.subtract(56,23));
     }
     
     public int add(int num1, int num2)
@@ -15,4 +16,8 @@ public class Calculator
         return num1 + num2;
     }
     
+    public int subtract(int num1, int num2)
+    {
+        return (num1 > num2 ? (num1 - num2) : (num2 - num1));
+    }
 }
