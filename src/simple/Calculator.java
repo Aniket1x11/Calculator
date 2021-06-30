@@ -9,6 +9,7 @@ public class Calculator
         
         System.out.println(calculator.add(5,6));
         System.out.println(calculator.subtract(56,23));
+        System.out.println(calculator.multiply(5,23));
     }
     
     public int add(int num1, int num2)
@@ -19,5 +20,10 @@ public class Calculator
     public int subtract(int num1, int num2)
     {
         return (num1 > num2 ? (num1 - num2) : (num2 - num1));
+    }
+    
+    public int multiply(int num1, int num2)
+    {
+        return num1 * num2;
     }
 }
